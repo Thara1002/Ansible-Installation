@@ -1,0 +1,271 @@
+sestatus
+sudo shutdown -h now
+sudo su
+wget wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+ls
+rm -f lein*
+ls
+wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+vi lein 
+sudo cp lein /bin/lein
+sudo chmod a+x /bin/lein
+lein
+gem install json_pure
+sudo su
+sudo easy_install pip
+sudo pip install paramiko PyYAML Jinja2 httplib2 six
+sudo pip install PyYAML
+sudo yum install python-devel
+sudo pip install paramiko PyYAML Jinja2 httplib2 six
+gem --help
+sudo gem --help
+sudo su
+ruby --version
+ruby
+ls
+ls -lart /bin
+ls -lart /bin/
+ls -lart /bin/r*
+ls -lart /usr/local
+source /etc/profile.d/rvm.sh
+rvm 
+which ruby
+ruby
+ruby --version
+which python
+python --version
+which java
+java -version
+which gem
+gem --version
+sudo shutdown -h now
+ls /home/
+ls /home/s_tharanarayan/
+sudo cp /home/s_tharanarayan/ansible_hosts ansible_hosts
+sudo cp /home/s_tharanarayan/iacschool-vm004.yml iacschool-vm004.yml
+vi iacschool-vm004.yml 
+echo hello sammy
+echo "hello sammy"
+vi iacschool-vm004.yml 
+sudo chown hemanth_damecharla:hemanth_damecharla iacschool-vm004.yml 
+vi iacschool-vm004.yml 
+ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+sudo ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+sudo ansible-playbook -i ansible_hosts -m ping
+ansible -i ansible_hosts -m ping
+ansible -i ansible_hosts -m ping -b
+sudo chown hemanth_damecharla:hemanth_damecharla ansible_hosts 
+cat ansible_hosts 
+ansible -i iacschool-vm004 -m ping -b
+sudo vi /home/s_tharanarayan/.bash_history 
+export ANSIBLE_INVENTORY=~/ansible_hosts
+ansible all -m ping -b -c paramiko
+sudo vi /home/s_tharanarayan/.bash_history 
+ansible localhost -i ansible_hosts -b  -a "ping" -c paramiko
+sudo vi /home/s_tharanarayan/.bash_history 
+sudo su
+sudo easy_install pip
+pip install paramiko PyYAML Jinja2 httplib2 six
+export ANSIBLE_INVENTORY=~/ansible_hosts
+ansible all -m ping -b -c paramiko
+cat ansible_hosts 
+vi ansible_hosts 
+ansible all -m ping -b -c paramiko
+ls /etc/
+$ANSIBLE_INVENTORY
+echo $ANSIBLE_INVENTORY
+ls -lart
+vi ansible_hosts 
+ansible localhost -m ping -c paramiko
+ansible --inventory-file=$ANSIBLE_INVENTORY -m ping -c paramiko
+ansible -m ping -c paramiko
+ansible all -m ping -c paramiko
+ansible all -m ping -c paramiko -b 
+ANSIBLE_HOST_KEY_CHECKING=False
+ansible all -m ping -c paramiko -b 
+vi ansible.cfg
+ansible all -m ping -c paramiko -b 
+ansible localhost -m ping -c paramiko -b 
+vi /etc/hosts
+sudo vi /etc/hosts
+ping agent
+ansible all -m ping -c paramiko -b 
+ansible all -m ping -c paramiko 
+vi ~/ansible_hosts 
+ansible all -m ping -c paramiko 
+ansible all -m ping -c paramiko -
+ansible all -m ping -c paramiko -b
+ansible localhost -m ping -c paramiko -b
+root
+sudo su
+exit
+ansible
+ansible localhost -m ping -c paramiko
+exit
+sudo cat /home/s_tharanarayan/.bash_history 
+ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+ansible localhost -i ansible_hosts -b -m ping -c paramiko
+ansible localhost -m ping -c paramiko
+ansible all -m ping -b
+ls
+cd /home/s_tharanarayan/
+ls
+ansible localhost -m ping -c paramiko
+ansible iacschool-vm004 -m ping -c paramiko
+ansible -i iacschool-vm004 -m ping -c paramiko
+ansible -i "localhost,iacschool-vm004" -m ping -c paramiko
+ls
+cat ansible_hosts 
+vi iacschool-vm004.retry 
+exit
+ssh iacschool-vm004
+ssh -h
+ssh hemanth_damecharla@iacschool-vm004
+ssh hemanth_damecharla@iacschool-vm004 ping
+clear
+exit
+ls
+ls .ssh/
+ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+vi ansible.cfg
+ansible-playbook iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --debug
+ansible-playbook iacschool-vm004.yml -t
+ansible-playbook --
+ansible-playbook iacschool-vm004.yml -v
+ansible -m ping -c paramiko
+ansible all -m ping -c paramiko -v
+ansible all -m ping  -v
+sudo ansible all -m ping  -v
+ssh-keygen -t rsa -f ~/.ssh/hemanthavarukey -C hemanth_damecharla
+ssh hemanth_damecharla@iacschool-vm004
+vi ~/.ssh/hemanthavarukey
+vi ~/.ssh/hemanthavarukey.pub 
+exit
+ssh hemanth_damecharla@iacschool-vm004
+sudo ansible all -m ping  -v
+vi ansible_hosts 
+sudo ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey -v
+sudo ansible all -m ping -v
+vi ansible_hosts 
+sudo vi /etc/hosts
+sudo ansible all -m ping -v
+ansible all -m ping -v
+vi ansible_hosts 
+ansible all -m ping -v
+vi ansible_hosts 
+ansible all -m ping -v
+ssh hemanth_damecharla@iacschool-vm004
+exit
+ls
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+git clone https://github.com/ansible/ansible-examples/tree/master/lamp_simple_rhel7
+git clone https://github.com/ansible/ansible-examples
+ansible-playbook \ --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook /home/hemanth_damecharla/ansible-examples/lamp_simple_rhel7/site.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook /home/hemanth_damecharla/ansible-examples/lamp_simple_rhel7/site.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook /home/hemanth_damecharla/ansible-examples/lamp_simple_rhel7/site.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi ~/ansible-examples/lamp_simple_rhel7/site.yml
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi /home/s_tharanarayan/iacschool-vm004.yml
+vi iacschool-vm004.yml 
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+vi apache.yml
+ansible-playbook iacschool-vm004.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi ansible.cfg 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml 
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+vi ansible.cfg 
+vi apache.yml 
+ls ~/ansible-examples/
+ls ~/ansible-examples/lamp_simple_rhel7/
+vi ~/ansible-examples/lamp_simple_rhel7/site.yml 
+ls ~/ansible-examples/lamp_simple_rhel7/roles/
+ls ~/ansible-examples/lamp_simple_rhel7/roles/web
+ls ~/ansible-examples/lamp_simple_rhel7/roles/web/tasks/
+vi ~/ansible-examples/lamp_simple_rhel7/roles/web/tasks/install_httpd.yml 
+vi ~/ansible-examples/lamp_simple_rhel7/site.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+curl 104.199.181.211
+curl -i 104.199.181.211
+vi apache.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+curl -i 104.199.181.211
+vi apache.retry 
+curl -i 10.140.0.2
+ssh hemanth_damecharla@iacschool-vm004
+curl -i 104.199.181.211
+curl -i 10.140.0.2
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ssh hemanth_damecharla@iacschool-vm004
+vi /home/hemanth_damecharla/.ssh/known_hosts 
+ssh hemanth_damecharla@iacschool-vm004
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+exit
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+curl http://130.211.248.115
+exit
+ls
+vi apache.yml 
+vi apache.retry 
+pushd ansible-examples/
+popd
+man command
+ssh iacschool-vm004
+ls
+ls .ssh/
+cd .ssh/
+vi hemanthavarukey.pub 
+exit
+ssh iacschool-vm004
+ansible all -m ping --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+vi apache.yml 
+ansible-playbook apache.yml --private-key /home/hemanth_damecharla/.ssh/hemanthavarukey --verbose
+who
+exit

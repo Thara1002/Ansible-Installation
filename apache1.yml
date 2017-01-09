@@ -1,0 +1,20 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: install apache2
+      yum: name={{ item }} state=present
+      with_items:
+       - httpd
+       - php
+       - php-mysql
+
+    - name: firewalld service status
+      service: name=firewalld state=started enabled=yes
+    
+    - name: insert firewalld rule for httpd
+      firewalld: port={{ 80 }}/tcp permanent=true state=enabled zone=public immediate=yes
+
+    - name: httpd service start
+      service: name=httpd state=started enabled=yes
+      #yum: name=apache2 update_cache=yes state=latest
