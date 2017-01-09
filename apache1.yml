@@ -17,4 +17,4 @@
 
     - name: httpd service start
       service: name=httpd state=started enabled=yes
-      #yum: name=apache2 update_cache=yes state=latest
+      #yum: name=apache2 update_cache=yes state=latest   hi
