@@ -1,0 +1,188 @@
+    1  ls
+    2  mkdir /tmp/ansible_tar
+    3  cd /tmp/ansible_tar/
+    4  curl -s http://releases.ansible.com/ansible/ansible-latest.tar.gz
+    5  cd ..
+    6  curl -s http://releases.ansible.com/ansible/ansible-latest.tar.gz | tar xz -C /tmp/ansible_tar/ --strip-components=1
+    7  ls -lrt
+    8  cd ansible_tar/
+    9  ls
+   10  ls -ltr
+   11  vi setup.cfg
+   12  sudo python setup.py
+   13  sudo python setup.py install
+   14  sudo make install
+   15  ls -ltr
+   16  sudo make 
+   17  cd
+   18  ansible
+   19  ansible --version
+   20  git clone git://github.com/ansible/ansible.git --recursive
+   21  cd ansible/
+   22  ls
+   23  source ./hacking/env-setup
+   24  git pull --rebase
+   25  git submodule update --init --recursive
+   26  echo "127.0.0.1" > ~/ansible_hosts
+   27  export ANSIBLE_INVENTORY=~/ansible_hosts
+   28  ansible all -m ping --ask-pass
+   29  ansible all -m ping 
+   30  ansible all --h
+   31  ansible all -m ping -b
+   32  cd ..
+   33  ls
+   34  echo "iacschool-vm004" >> ansible_hosts
+   35  cat ansible_hosts 
+   36  ansible all -m ping -b
+   37  git submodule update --init --recursive
+   38  git pull --rebase
+   39  echo "10.140.0.5" > ~/ansible_hosts
+   40  export ANSIBLE_INVENTORY=~/ansible_hosts
+   41  ansible all -m ping --ask-pass
+   42  paramiko --version
+   43  sudo easy_install pip
+   44  sudo pip install paramiko PyYAML Jinja2 httplib2 six
+   45  ansible localhost -i .ansible/hosts --ask-pass -a "whoami" -c paramiko
+   46  ansible localhost -i .ansible_hosts --ask-pass -a "whoami" -c paramiko
+   47  ansible localhost -i .ansible_hosts -b  -a "whoami" -c paramiko
+   48  ansible localhost -i .ansible_hosts -b  -a "whoami" -c paramiko
+   49  ansible localhost -i ansible_hosts -b  -a "whoami" -c paramiko
+   50  cat /etc/hosts
+   51  cat ansible_hosts 
+   52  ping iacschool-vm004
+   53  ansible localhost -i ansible_hosts -b  -a "ping" -c paramiko
+   54  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+   55  history
+   56  history >> thara_ansible.log
+   57  vi thara_ansible.log 
+   58  vi iacschool-vm004.yml
+   59  ansible-playbook --help
+   60  ls -lrt
+   61  ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+   62  vi iacschool-vm004.yml
+   63  ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+   64  history
+   65  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+   66  vi /etc/hosts
+   67  vi ansible_hosts
+   68  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+   69  vi iacschool-vm004.yml 
+   70  ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+   71  ansible -m ping -c paramiko
+   72  ansible all -m ping -c paramiko
+   73  vi /etc/ansible/hosts
+   74  ansible -i ansible_hosts -b  -m ping -c paramiko
+   75  vi ansible_hosta
+   76  vi ansible_hosts
+   77  ansible localhost -i ansible/hosts -b  -m ping -c paramiko
+   78  vi ansible_hosts
+   79  vi /etc/hosts
+   80  sudo vi /etc/hosts
+   81  ansible localhost -i ansible/hosts -b  -m ping -c paramiko
+   82  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+   83  vi iacschool-vm004.yml
+   84  ansible localhost -i ansible/hosts -b  -m ping -c paramiko
+   85  vi ansible/hosts
+   86  ansible all -i ansible/hosts -b  -m ping -c paramiko
+   87  ansible all -i ansible_hosts -b  -m ping -c paramiko
+   88  vi ansible/hosts
+   89  vi ansible_hosts
+   90  ansible web -m ping -c paramiko
+   91  sudo vi /etc/ansible/hosts
+   92  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+   93  ansible all -i ansible_hosts -b  -m ping -c paramiko
+   94  ansible all -i ansible/hosts -b  -m ping -c paramiko
+   95  sudo vi ansible/hosts
+   96  ansible all -i ansible/hosts -b  -m ping -c paramiko
+   97  vi ansible_hosts
+   98  cat ansible_hosts
+   99  cat /etc/hosts
+  100  sudo vi /etc/hosts
+  101  cat /etc/hosts
+  102  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+  103  ansible all -i ansible_hosts -b  -m ping -c paramiko
+  104  ansible all -i /etc/hosts -b  -m ping -c paramiko
+  105  cat setup.cfg
+  106  cat ansible.cfg
+  107  cd ansible
+  108  cat ansible.cfg
+  109  cat setup.cfg
+  110  ansible web -m command -a "/bin/echo hello sammy"
+  111  cat /etc/hosts
+  112  sudo vi /etc/hosts
+  113  cat /etc/hosts
+  114  ansible web -m command -a "/bin/echo hello sammy"
+  115  ansible all -i /etc/hosts -b  -m ping -c paramiko
+  116  ansible all -i ansible_hosts -b  -m ping -c paramiko
+  117  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+  118  ansible localhost  -m ping -c paramiko
+  119  ansible all  -m ping -c paramiko
+  120  ansible web  -m ping -c paramiko
+  121  sudo vi /etc/ansible/hosts
+  122  ls -lart /etc/ansible
+  123  pwd
+  124  cd
+  125  sudo mkdir /etc/ansible
+  126  sudo vi /etc/ansible/hosts
+  127  ansible web  -m ping -c paramiko
+  128  ping 10.140.0.2
+  129  ansible web -m command -a "/bin/echo hello sammy"
+  130  cat /etc/ansible/ansible.cfg
+  131  ansible localhost -i ansible_hosts -b  -m ping -c paramiko
+  132  cd ansible
+  133  wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg
+  134  ls
+  135  cd
+  136  cd /etc
+  137  ls
+  138  cd
+  139  vi /ansible/ansible.cfg
+  140  cd ansible
+  141  vi ansible.cfg
+  142  ansible web -m ping -c paramiko
+  143  gcloud compute ssh iacschool-vm004
+  144  cd
+  145  gcloud compute ssh iacschool-vm004
+  146  gcloud compute ssh [iacschool-vm004]
+  147  ssh-keygen -t rsa -f ~/.ssh/my-ssh-key -C userssh
+  148  chmod 400 ~/.ssh/my-ssh-key
+  149  cat ~/.ssh/my-ssh-key.pub
+  150  ssh -i ~/.ssh/my-ssh-key userssh@10.140.0.2
+  151  ansible --help
+  152  ls -lart
+  153  ls -lart .ssh/
+  154  ls
+  155  vi iacschool-vm004.yml 
+  156  pwd
+  157  vi iacschool-vm004.y
+  158  vi iacschool-vm004.yml 
+  159  ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+  160  vi iacschool-vm004.yml 
+  161  ansible-playbook -i ansible_hosts iacschool-vm004.yml 
+  162  vi iacschool-vm004.yml 
+  163  ansible-playbook -i ansible_hosts iacschool-vm004.yml --private-key=/home/s_tharanarayan/.ssh/my-ssh-key
+  164  ansible all -i ansible_hosts -m ping --private-key=/home/s_tharanarayan/.ssh/my-ssh-key
+  165  sudo apt-get install git
+  166  sudo yum install git-all
+  167  history
+  168  git config --global user.email "s.tharanarayan@gmail.com"
+  169  git config --global user.name "Thara Suryanarayana"
+  170  ssh-keygen -t rsa -b 4096 -C "s.tharanarayan@gmail.com"
+  171  git --version
+  172  ls -al ~/.ssh
+  173  vi /home/s_tharanarayan/.ssh/id_rsa.pub
+  174  eval $(ssh-agent -s)
+  175  ssh-add ~/.ssh/id_rsa
+  176  clip < ~/.ssh/id_rsa.pub
+  177  git@github.com:Thara1002/afraid-to-commit.git
+  178  https://github.com/Thara1002/afraid-to-commit.git
+  179  ls -a
+  180  git init
+  181  ls -a
+  182  git config --global user.email "s.tharanarayan@gmail.com"
+  183  git config --global user.name "Thara1002"
+  184  git clone https://github.com/Thara1002/Ansible-Installation.git
+  185  ls -l
+  186  git status
+  187  history
+  188  history > history.txt 
